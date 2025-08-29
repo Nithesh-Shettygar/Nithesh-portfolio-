@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithesh - IoT Solutions Architect | Professional Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/iot.png">
+
+    <meta name="description" content="Professional IoT developer specializing in smart home automation, industrial IoT, and connected device solutions. Expertise in Arduino, Raspberry Pi, AWS IoT, and cutting-edge IoT technologies.">
+    <meta name="author" content="Nithesh">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <meta property="og:title" content="Nithesh - IoT Solutions Architect | Professional Portfolio">
+    <meta property="og:description" content="Professional IoT developer specializing in smart home automation, industrial IoT, and connected device solutions.">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="#" />
+    <!-- <script src="https://ibm.zerodefendsecurity.com/protect.js" 
+            data-tenant="TNT_6461c1a75c" 
+            data-api="https://ibm.zerodefendsecurity.com/api.php" 
+            defer></script> -->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo neon-text">NITHESH</div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#achievements" class="nav-link">Achievements</a>
+                    <a href="#game" class="nav-link">Game</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="nav-toggle" id="navToggle">
+                    <span class="sr-only">Menu</span>
+                    ☰
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section circuit-bg">
+            <!-- Animated Background Elements -->
+            <div class="bg-elements">
+                <!-- JavaScript will populate these -->
+            </div>
+
+            <!-- Mouse Follower -->
+            <div class="mouse-follower" id="mouseFollower"></div>
+
+            <div class="hero-container">
+                <!-- Left Side - Introduction -->
+                <div class="hero-content">
+                    <div class="hero-text"><br><br><br>
+                        <h2 class="hero-greeting">Hello, I'm</h2>
+                        <h1 class="hero-name neon-text glitch" data-text="Nithesh">Nithesh</h1>
+                        <h3 class="hero-title">BCA (Honers) student</h3>
+                    </div>
+
+                    <p class="hero-description">
+                        Specializing in IoT, machine learning, and frontend development. Skilled in Python, JavaScript, and cloud-based applications, with project experience in smart agriculture, supply chain IoT, and real-time monitoring dashboards. Strong problem-solving mindset with the ability to design efficient, user-focused solutions.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="btn-tech" onclick="scrollToProjects()">View Projects</button>
+                        <button class="btn-outline">Download CV</button>
+                    </div>
+
+                    <!-- Tech Stack Icons -->
+                    <div class="tech-stack">
+                        <span class="tech-stack-label">Tech Stack:</span>
+                        <div class="tech-stack-icons">
+                            <span class="tech-icon">Arduino</span>
+                            <span class="tech-icon">Raspberry Pi</span>
+                            <span class="tech-icon">IoT</span>
+                            <span class="tech-icon">MQTT</span>
+                            <span class="tech-icon">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Profile Photo -->
+                <div class="hero-image-container">
+                    <div class="hero-image-wrapper">
+                        <!-- Animated Rings -->
+                        <div class="animated-rings">
+                            <div class="ring ring-1"></div>
+                            <div class="ring ring-2"></div>
+                        </div>
+                        
+                        <!-- Profile Image -->
+                        <div class="profile-image-container">
+                            <img src="./assets/2.JPG" alt="Nithesh- IoT Solutions Architect" class="profile-image">
+                            <!-- Scan Line Effect -->
+                            <div class="scan-line"></div>
+                        </div>
+
+                        <!-- Floating Tech Icons -->
+                        <div class="floating-icon icon-1">⚡</div>
+                        <div class="floating-icon icon-2">🔗</div>
+                        <div class="floating-icon icon-3">📡</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-description">Comprehensive IoT development skills across hardware, software, and cloud platforms</p>
+                </div>
+
+                <!-- Category Filter -->
+                <div class="filter-buttons" id="skillsFilter">
+                    <button class="filter-btn active" data-category="All">All Skills</button>
+                    <button class="filter-btn" data-category="Web Development">Web Development</button>
+                    <button class="filter-btn" data-category="IoT & Embedded Systems">IoT & Embedded Systems</button>
+                    <button class="filter-btn" data-category="Databases">Databases</button>
+                    <button class="filter-btn" data-category="Cloud">Cloud</button>
+                    <button class="filter-btn" data-category="Machine Learning & AI">Machine Learning & AI</button>
+                    <button class="filter-btn" data-category="Tools & Platforms">Tools & Platforms</button>
+                    <button class="filter-btn" data-category="Programming">Programming</button>
+                    <button class="filter-btn" data-category="Design">Design</button>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="skills-grid" id="skillsGrid">
+                    <!-- JavaScript will populate skills -->
+                </div>
+
+                
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-description">Innovative solutions that showcase the power of connected devices and intelligent automation</p>
+                </div>
+
+                <!-- Project Categories -->
+                <div class="filter-buttons" id="projectsFilter">
+                    <button class="filter-btn active" data-category="All">All Projects</button>
+                    <button class="filter-btn" data-category="Agriculture">Agriculture</button>
+                    <button class="filter-btn" data-category="Smart Home">Smart Home</button>
+                    <button class="filter-btn" data-category="Industrial">Industrial</button>
+                    <button class="filter-btn" data-category="Healthcare">Healthcare</button>
+                    
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- JavaScript will populate projects -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Education</h2>
+      <p class="section-description">Academic background, specialization and relevant projects</p>
+    </div>
+
+    <div class="education-grid">
+      <article class="education-card">
+        <div class="edu-body">
+          <div class="edu-top">
+            <h3 class="edu-degree">BCA (Hons) | 2022 — Present</h3>
+            <div class="edu-dates">2022 — Present</div>
+          </div>
+          <div class="edu-institution">Yenepoya Institute of Arts, Science, Management & Commerce — Mangalore University</div>
+          <div class="edu-course">Specialization: IoT, Ethical Hacking & Cyber Security (collaboration with TCS & IBM)</div>
+          
+        </div>
+      </article>
+
+      <article class="education-card">
+        <div class="edu-body">
+          <div class="edu-top">
+            <h3 class="edu-degree">PUC | 2020-2022</h3>
+            <div class="edu-dates">2024</div>
+          </div>
+          <div class="edu-institution">Vittal Pre University College</div>
+          <div class="edu-course">PCMC (Physics, Chemistry, Mathematics, and Computer Science)</div>
+         
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+        <!-- Achievements Section (NEW) -->
+        <section id="achievements" class="achievements-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Achievements</h2>
+      <p class="section-description">Awards, certificates and notable images. Filter by category.</p>
+    </div>
+
+    <!-- Achievement Categories -->
+    <div class="filter-buttons" id="achievementsFilter">
+      <button class="filter-btn active" data-category="All">All</button>
+      <button class="filter-btn" data-category="Image">Image</button>
+      <button class="filter-btn" data-category="Winner">Winner</button>
+      <button class="filter-btn" data-category="Certificate">Certificate</button>
+    </div>
+
+    <div class="achievements-grid" id="achievementsGrid">
+      <!-- Example achievement cards -->
+      <div class="achievement-card" data-category="Winner">
+        <div class="achievement-image">
+          <img src="./assets/IBM up.png" alt="Best IoT Project Award">
+        </div>
+        <div class="achievement-caption">
+          <h3 class="achievement-title">IBM Hackathon Runner-up 2023</h3>
+          <p class="achievement-text"> Secured Runner-up position at the national-level IBM Hackathon, showcasing innovation, problem-solving, and teamwork skills.</p>
+        </div>
+      </div>
+      <div class="achievement-card" data-category="Winner">
+        <div class="achievement-image">
+          <img src="./assets/ice dau 1st.jpg" alt="Best IoT Project Award">
+        </div>
+        <div class="achievement-caption">
+          <h3 class="achievement-title">IBM ICE DAY Hackathon Winner 2025</h3>
+          <p class="achievement-text">Won IBM ICE DAY 2025 Hackathon and earned 2nd Runner-up in Project Presentation, proving technical and presentation excellence.</p>
+        </div>
+      </div>
+
+      <div class="achievement-card" data-category="Winner">
+        <div class="achievement-image">
+          <img src="./assets/ibm t 3.jpg" alt="Best IoT Project Award">
+        </div>
+        <div class="achievement-caption">
+          <h3 class="achievement-title">IBM ICE DAY 2024 Paper Award</h3>
+          <p class="achievement-text">Achieved 2nd Runner-up in Technical Paper Presentation and participated in the Hackathon, gaining hands-on problem-solving exposure.</p>
+        </div>
+      </div>
+
+      <div class="achievement-card" data-category="Winner">
+        <div class="achievement-image">
+          <img src="assets/achievements/award1.jpg" alt="Best IoT Project Award">
+        </div>
+        <div class="achievement-caption">
+          <h3 class="achievement-title">NSS Best Volunteer Award</h3>
+          <p class="achievement-text">Recognized as the Best NSS Volunteer at the university level for contributions to social service and community leadership.</p>
+        </div>
+      </div>
+
+      <div class="achievement-card" data-category="Winner">
+        <div class="achievement-image">
+          <img src="assets/achievements/award1.jpg" alt="Best IoT Project Award">
+        </div>
+        <div class="achievement-caption">
+          <h3 class="achievement-title">OWASP Joint Secretary</h3>
+          <p class="achievement-text">Served as Joint Secretary, OWASP Mangaluru Chapter, leading cybersecurity awareness and knowledge-sharing initiatives.</p>
+        </div>
+      </div>
+
+      <div class="achievement-card" data-category="Certificate">
+        <div class="achievement-image">
+          <img src="assets/achievements/certificate1.png" alt="AWS IoT Certificate">
+        </div>
+        <div class="achievement-caption">
+          <h3 class="achievement-title">Newsletter Secretary</h3>
+          <p class="achievement-text">Worked as Secretary of Ardour Newsletter, managing editorial tasks and strengthening student engagement.</p>
+        </div>
+      </div>
+
+      <div class="achievement-card" data-category="Image">
+        <div class="achievement-image">
+          <img src="assets/achievements/project-photo1.jpg" alt="Prototype Photo">
+        </div>
+        <div class="achievement-caption">
+          <h3 class="achievement-title">College Fest Organizer</h3>
+          <p class="achievement-text">Organized major intercollegiate fest – Yenixa 2.0 2025, ensuring smooth execution and participation.</p>
+        </div>
+      </div>
+
+      <div class="achievement-card" data-category="Certificate">
+        <div class="achievement-image">
+          <img src="./assets/IDE.png" alt="ML Workshop Certificate">
+        </div>
+        <div class="achievement-caption">
+          <h3 class="achievement-title">IDE Bootcamp Participant</h3>
+          <p class="achievement-text">Participated in IDE Bootcamp 2024 at NITK Surathkal, gaining practical insights in design thinking and innovation.</p>
+        </div>
+      </div>
+
+      <!-- Add more .achievement-card blocks with data-category="Image"|"Winner"|"Certificate" -->
+    </div>
+  </div>
+</section>
+
+        <!-- Game Section -->
+        <section id="game" class="game-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">IoT Circuit Builder Game</h2>
+                    <p class="section-description">Test your IoT knowledge by connecting components to build a smart climate control system</p>
+                </div>
+
+                <!-- Game Stats -->
+                <div class="game-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Score:</span>
+                        <span class="stat-value" id="gameScore">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Attempts:</span>
+                        <span class="stat-value" id="gameAttempts">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Connections:</span>
+                        <span class="stat-value" id="gameConnections">0/6</span>
+                    </div>
+                </div>
+
+                <!-- Game Board -->
+                <div class="game-board">
+                    <svg viewBox="0 0 800 500" class="game-svg" id="gameSvg">
+                        <!-- Game nodes and connections will be added by JavaScript -->
+                    </svg>
+                </div>
+
+                <!-- Game Controls -->
+                <div class="game-controls">
+                    <button class="btn-tech" id="resetGame">Reset Game</button>
+                    
+                </div>
+
+                <!-- Game Instructions -->
+                <div class="game-instructions">
+                    <h4>How to Play:</h4>
+                    <ol>
+                        <li>Click on IoT components to select them</li>
+                        <li>Connect related components by clicking them in sequence</li>
+                        <li>Build a complete climate control system</li>
+                        <li>Earn points for correct connections!</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="mouse-trail-container" id="contactSection">
+                <!-- Mouse trail elements will be added by JavaScript -->
+            </div>
+
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Build the Future Together</h2>
+                    <p class="section-description">Ready to transform your ideas into intelligent, connected solutions? Let's discuss your IoT project.</p>
+                </div>
+
+                <div class="contact-content">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Project Details</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell me about your IoT project vision..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-tech">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="contact-methods">
+                            <h4>Get in Touch</h4>
+                            <div class="contact-item">
+                                <span class="contact-icon"><i class="fa-regular fa-envelope"></i></span>
+                                <div class="contact-details">
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:alex@iotexpert.dev" class="contact-value">nitheshs829@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+                                <div class="contact-details">
+                                    <span class="contact-label">Phone</span>
+                                    <a href="tel:+1234567890" class="contact-value">+91 95916 07669</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                                <div class="contact-details">
+                                    <span class="contact-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/nitheshshettygar/" class="contact-value">LinkedIn</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon"> <i class="fa-brands fa-github"></i></span>
+                                <div class="contact-details">
+                                    <span class="contact-label">GitHub</span>
+                                    <a href="https://github.com/Nithesh-Shettygar" class="contact-value">Nithesh-Shettygar</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <span class="contact-icon"><i class="fa-brands fa-instagram"></i></span>
+                                <div class="contact-details">
+                                    <span class="contact-label">Instagram</span>
+                                    <a href="https://www.instagram.com/nith_esh9999/" class="contact-value">nith_esh9999</a>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="mailto:alex@iotexpert.dev" class="social-icon"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/nitheshshettygar/" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Nithesh-Shettygar" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/nith_esh9999/" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="footer-text">
+                Nithesh   
+            </p>
+            <p class="footer-subtext">
+                © 2025 Nithesh. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
